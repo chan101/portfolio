@@ -1,11 +1,24 @@
 
+import { ThemeProvider } from '@mui/material/styles';
+import {darkTheme, lightTheme} from '@/public/theme';
 
-function aboutPage() {
-    return(
-        <div style={{display:'grid',placeItems:'center'}}>
-            <p>About</p>
-        </div>
-    )
-}
+import Navbar from './components/_Navbar';
+import { useState } from 'react';
 
-export default aboutPage;
+
+
+const About = () => {
+  const [theme, setTheme] = useState(true);
+
+  const handleThemeChange = () => {
+    setTheme(!theme)
+  }
+
+  return (
+    <ThemeProvider theme={theme?darkTheme:lightTheme}>
+    <Navbar themeChange={handleThemeChange} theme={theme} title={"About"}/>
+    </ThemeProvider>
+  );
+};
+
+export default About;

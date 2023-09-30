@@ -1,56 +1,12 @@
 import { useState } from 'react';
-import { styled, alpha  } from '@mui/material/styles';
-import Box from '@mui/material/Box';
-import Drawer from '@mui/material/Drawer';
-import CssBaseline from '@mui/material/CssBaseline';
-import MuiAppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
-import List from '@mui/material/List';
-import Typography from '@mui/material/Typography';
-import Divider from '@mui/material/Divider';
-import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
-import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
-import LightModeIcon from '@mui/icons-material/LightMode';
-import DarkModeIcon from '@mui/icons-material/DarkMode';
+import {CssBaseline, Box} from '@mui/material';
 
-import Tooltip from '@mui/material/Tooltip';
+import MyAppBar from './NavbarComps/MyAppBar';
+import MyDrawer from './MyDrawer';
 
 
-const drawerWidth = 240;
-
-const AppBar = styled(MuiAppBar, {
-  shouldForwardProp: (prop) => prop !== 'open',
-})(({ theme, open }) => ({
-  transition: theme.transitions.create(['margin', 'width'], {
-    easing: theme.transitions.easing.sharp,
-    duration: theme.transitions.duration.leavingScreen,
-  }),
-  ...(open && {
-    width: `calc(100% - ${drawerWidth}px)`,
-    marginLeft: `${drawerWidth}px`,
-    transition: theme.transitions.create(['margin', 'width'], {
-      easing: theme.transitions.easing.easeOut,
-      duration: theme.transitions.duration.enteringScreen,
-    }),
-  }),
-}));
 
 
-const DrawerHeader = styled('div')(({ theme }) => ({
-  display: 'flex',
-  alignItems: 'center',
-  padding: theme.spacing(0, 1),
-  // necessary for content to be below app bar
-  ...theme.mixins.toolbar,
-  justifyContent: 'flex-end',
-}));
 
 
 export default function Navbar(props) {
@@ -63,42 +19,8 @@ export default function Navbar(props) {
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar position="fixed" open={drawToggle}>
-        <Toolbar variant='regular'>
-          <IconButton color='secondary' aria-label="open drawer" onClick={handleDrawer} edge="start">
-            <MenuIcon />
-          </IconButton>
-          <Typography flex="4" variant="h5" noWrap component="div" align="center">
-            Home
-          </Typography>
-          <Tooltip title={props.theme?"Light Theme":"Dark Theme"}>
-          <IconButton color='inherit' aria-label="open drawer" onClick={props.themeChange} edge="start">
-            {props.theme?<LightModeIcon />:<DarkModeIcon/>}
-          </IconButton>
-          </Tooltip>
-        </Toolbar>
-      </AppBar>
-      <Drawer sx={{width: drawerWidth, flexShrink: 0, '& .MuiDrawer-paper': { width: drawerWidth, boxSizing: 'border-box',}, }} 
-        variant="persistent" anchor="left" open={drawToggle}>
-        <DrawerHeader>
-          <IconButton onClick={handleDrawer}>
-            <ChevronLeftIcon />
-          </IconButton>
-        </DrawerHeader>
-        <Divider />
-        <List>
-          {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-            <ListItem key={text} disablePadding>
-              <ListItemButton>
-                <ListItemIcon>
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                </ListItemIcon>
-                <ListItemText primary={text} />
-              </ListItemButton>
-            </ListItem>
-          ))}
-        </List>
-      </Drawer>
+      <MyAppBar handleDrawer={handleDrawer} drawToggle={drawToggle} {...props} />
+      <MyDrawer handleDrawer={handleDrawer} drawToggle={drawToggle} />
     </Box>
   );
 }

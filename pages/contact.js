@@ -1,4 +1,4 @@
-// pages/index.js
+
 import { ThemeProvider } from '@mui/material/styles';
 import {darkTheme, lightTheme} from '@/public/theme';
 
@@ -7,7 +7,7 @@ import { useState } from 'react';
 
 
 
-const Home = () => {
+const About = () => {
   const [theme, setTheme] = useState(true);
 
   const handleThemeChange = () => {
@@ -16,10 +16,9 @@ const Home = () => {
 
   return (
     <ThemeProvider theme={theme?darkTheme:lightTheme}>
-    <Navbar themeChange={handleThemeChange} theme={theme} title={'Home'}/>
-    
+    <Navbar themeChange={handleThemeChange} theme={theme} title={"Contact"}/>
     </ThemeProvider>
   );
 };
 
-export default Home;
+export default About;
