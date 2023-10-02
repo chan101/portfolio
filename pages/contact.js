@@ -37,7 +37,7 @@ const contact = () => {
     window.open(telUrl, "_blank");
   };
   const handleLocation = () => {
-    window.open("https://maps.app.goo.gl/11kD1LofdaTpdKfb7", "_blank");
+    window.open("https://maps.app.goo.gl/wWfHTYQgM7Nio9u29", "_blank");
   };
   const handleLinkedIn = () => {
     window.open(
@@ -79,7 +79,7 @@ const contact = () => {
             </Typography>
             <List>
               <ListItem>
-                <Tooltip title="E-Mail me">
+                <Tooltip title="Email">
                   <IconButton
                     color="secondary"
                     edge="start"
@@ -93,7 +93,7 @@ const contact = () => {
                 </Typography>
               </ListItem>
               <ListItem>
-                <Tooltip title="Call me">
+                <Tooltip title="Call">
                   <IconButton
                     color="secondary"
                     edge="start"
@@ -105,7 +105,7 @@ const contact = () => {
                 <Typography variant="body2">+91 9686407238</Typography>
               </ListItem>
               <ListItem>
-                <Tooltip title="Locate me">
+                <Tooltip title="Location">
                   <IconButton
                     color="secondary"
                     edge="start"

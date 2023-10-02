@@ -8,6 +8,7 @@ import {
   Button,
   ButtonGroup,
   Box,
+  Backdrop,
 } from "@mui/material";
 
 import {
@@ -25,6 +26,8 @@ import {
 
 import { styled } from "@mui/material/styles";
 import { useRouter } from "next/router";
+
+const drawerWidth = 250;
 
 const DrawerHeader = styled("div")(({ theme }) => ({
   display: "flex",
@@ -59,9 +62,16 @@ const MyDrawer = (props) => {
   };
 
   return (
+    <div>
+    <Backdrop
+        sx={{ color: "#fff", zIndex: 1, backdropFilter: "blur(4px)"}}
+        open={props.drawToggle}
+        onClick={props.handleDrawer}
+      ></Backdrop>
     <Drawer
       sx={{
         width: drawerWidth,
+        zIndex:10,
         flexShrink: 0,
         "& .MuiDrawer-paper": { width: drawerWidth, boxSizing: "border-box" },
       }}
@@ -182,6 +192,7 @@ const MyDrawer = (props) => {
         </ButtonGroup>
       </div>
     </Drawer>
+    </div>
   );
 };
 
