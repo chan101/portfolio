@@ -1,23 +1,20 @@
 // pages/index.js
-import { ThemeProvider } from '@mui/material/styles';
-import {darkTheme, lightTheme} from '@/public/theme';
-
-import Navbar from './components/_Navbar';
-import { useState } from 'react';
-
-
+import { ThemeProvider } from "@mui/material/styles";
+import { useMyTheme } from "./components/ThemeControl";
+import { CssBaseline } from "@mui/material";
+import Navbar from "./components/_Navbar";
 
 const Home = () => {
-  const [theme, setTheme] = useState(true);
-
-  const handleThemeChange = () => {
-    setTheme(!theme)
-  }
+  const { chosenTheme, handleThemeChange, finalTheme } = useMyTheme();
 
   return (
-    <ThemeProvider theme={theme?darkTheme:lightTheme}>
-    <Navbar themeChange={handleThemeChange} theme={theme} title={'Home'}/>
-    
+    <ThemeProvider theme={finalTheme}>
+      <CssBaseline enableColorScheme="true" />
+      <Navbar
+        title={"Home"}
+        theme={chosenTheme}
+        setChosenTheme={handleThemeChange}
+      />
     </ThemeProvider>
   );
 };

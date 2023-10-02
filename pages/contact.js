@@ -1,24 +1,139 @@
+// pages/contact.js
+import { ThemeProvider } from "@mui/material/styles";
+import { useMyTheme } from "./components/ThemeControl";
+import Navbar from "./components/_Navbar";
+import {
+  CssBaseline,
+  Typography,
+  Toolbar,
+  Container,
+  Card,
+  CardContent,
+  IconButton,
+  List,
+  ListItem,
+  Tooltip,
+} from "@mui/material";
 
-import { ThemeProvider } from '@mui/material/styles';
-import {darkTheme, lightTheme} from '@/public/theme';
+import {
+  Email,
+  Phone,
+  LocationOn,
+  LinkedIn,
+  WhatsApp,
+} from "@mui/icons-material";
 
-import Navbar from './components/_Navbar';
-import { useState } from 'react';
+const contact = () => {
+  const { chosenTheme, handleThemeChange, finalTheme } = useMyTheme();
 
-
-
-const About = () => {
-  const [theme, setTheme] = useState(true);
-
-  const handleThemeChange = () => {
-    setTheme(!theme)
-  }
+  const handleEmail = () => {
+    const email = "chandankumarchan1999@gmail.com";
+    const mailtoUrl = `mailto:${email}`;
+    window.open(mailtoUrl, "_blank");
+  };
+  const handleCall = () => {
+    const phoneNumber = "+919686407238";
+    const telUrl = `tel:${phoneNumber}`;
+    window.open(telUrl, "_blank");
+  };
+  const handleLocation = () => {
+    window.open("https://maps.app.goo.gl/11kD1LofdaTpdKfb7", "_blank");
+  };
+  const handleLinkedIn = () => {
+    window.open(
+      "https://www.linkedin.com/in/chandan-kumar-32522a1ab",
+      "_blank"
+    );
+  };
+  const handleWhatsApp = () => {
+    const phoneNumber = "9686407238";
+    const whatsappUrl = `https://wa.me/${phoneNumber}`;
+    window.open(whatsappUrl, "_blank");
+  };
 
   return (
-    <ThemeProvider theme={theme?darkTheme:lightTheme}>
-    <Navbar themeChange={handleThemeChange} theme={theme} title={"Contact"}/>
+    <ThemeProvider theme={finalTheme}>
+      <CssBaseline enableColorScheme="true" />
+      <Container>
+        <Navbar
+          title={"Contact"}
+          theme={chosenTheme}
+          setChosenTheme={handleThemeChange}
+        />
+      </Container>
+      <Container>
+        <Toolbar />
+      </Container>
+      <Container sx={{ display: "grid", placeItems: "center" }}>
+        <Card sx={{ maxWidth: 350, margin: 2 }}>
+          <CardContent>
+            <Typography
+              sx={{ fontSize: 14 }}
+              color="text.secondary"
+              gutterBottom
+            >
+              Contact Info
+            </Typography>
+            <Typography variant="h5" component="div">
+              Chandan Kumar R
+            </Typography>
+            <List>
+              <ListItem>
+                <Tooltip title="E-Mail me">
+                  <IconButton
+                    color="secondary"
+                    edge="start"
+                    onClick={handleEmail}
+                  >
+                    <Email />
+                  </IconButton>
+                </Tooltip>
+                <Typography variant="body2">
+                  chandankumarchan1999@gmail.com
+                </Typography>
+              </ListItem>
+              <ListItem>
+                <Tooltip title="Call me">
+                  <IconButton
+                    color="secondary"
+                    edge="start"
+                    onClick={handleCall}
+                  >
+                    <Phone />
+                  </IconButton>
+                </Tooltip>
+                <Typography variant="body2">+91 9686407238</Typography>
+              </ListItem>
+              <ListItem>
+                <Tooltip title="Locate me">
+                  <IconButton
+                    color="secondary"
+                    edge="start"
+                    onClick={handleLocation}
+                  >
+                    <LocationOn />
+                  </IconButton>
+                </Tooltip>
+                <Typography variant="body2">Bengaluru - 560057</Typography>
+              </ListItem>
+              <ListItem>
+                <Tooltip title="LinkedIn">
+                  <IconButton color="secondary" onClick={handleLinkedIn}>
+                    <LinkedIn fontSize="large" />
+                  </IconButton>
+                </Tooltip>
+                <Tooltip title="WhatsApp">
+                  <IconButton color="secondary" onClick={handleWhatsApp}>
+                    <WhatsApp fontSize="large" />
+                  </IconButton>
+                </Tooltip>
+              </ListItem>
+            </List>
+          </CardContent>
+        </Card>
+      </Container>
     </ThemeProvider>
   );
 };
 
-export default About;
+export default contact;

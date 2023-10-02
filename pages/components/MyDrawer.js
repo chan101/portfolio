@@ -5,28 +5,26 @@ import {
   ListItem,
   ListItemButton,
   Typography,
-  Collapse,
-  ListItemIcon,
-  ListItemText,
+  Button,
+  ButtonGroup,
+  Box,
 } from "@mui/material";
 
 import {
   ChevronLeft,
   School,
-  ExpandMore,
-  ExpandLess,
   WorkHistory,
+  Engineering,
   Construction,
-  Home
+  Home,
+  Call,
+  LightMode,
+  DarkMode,
+  SettingsBrightness,
 } from "@mui/icons-material";
 
 import { styled } from "@mui/material/styles";
-import { useState } from "react";
 import { useRouter } from "next/router";
-
-
-
-const drawerWidth = 250;
 
 const DrawerHeader = styled("div")(({ theme }) => ({
   display: "flex",
@@ -38,14 +36,27 @@ const DrawerHeader = styled("div")(({ theme }) => ({
 }));
 
 const MyDrawer = (props) => {
-  const [openEdu, setOpenEdu] = useState(false);
-  const [openWXP, setOpenWXP] = useState(false);
-  const [openProj, setOpenProj] = useState(false);
   const router = useRouter();
 
   const navigateHome = () => {
-    router.push('/')
-  }
+    router.push("/");
+  };
+  const navigateEdu = () => {
+    router.push("/education");
+  };
+  const navigateWXP = () => {
+    router.push("/work_XP");
+  };
+  const navigateSkills = () => {
+    router.push("/skills");
+  };
+  const navigateProj = () => {
+    router.push("/projects");
+  };
+
+  const navigateContact = () => {
+    router.push("/contact");
+  };
 
   return (
     <Drawer
@@ -63,117 +74,113 @@ const MyDrawer = (props) => {
           <ChevronLeft />
         </IconButton>
       </DrawerHeader>
+
       <List>
-      <ListItem key={"Home"} disablePadding>
-          <ListItemButton onClick={navigateHome}>
-            <IconButton color="secondary" edge="start">
-              <Home />
-            </IconButton>
-            <Typography flex="1" variant="h6" align="center" >
-              Home
-            </Typography>
-          </ListItemButton>
-        </ListItem>
-        <ListItem key={"Education"} disablePadding>
-          <ListItemButton>
-            <IconButton color="secondary" edge="start">
-              <School />
-            </IconButton>
-            <Typography flex="1" variant="h6" align="center" >
-              Education
-            </Typography>
-            {openEdu ? (
-              <ExpandLess
-                color="secondary"
-                onClick={() => {
-                  setOpenEdu(!openEdu);
-                }}
-              />
-            ) : (
-              <ExpandMore
-                color="secondary"
-                onClick={() => {
-                  setOpenEdu(!openEdu);
-                }}
-              />
-            )}
-          </ListItemButton>
-        </ListItem>
-        <Collapse in={openEdu} timeout="auto" unmountOnExit>
-          <List component="div" disablePadding>
-            <ListItemButton sx={{ pl: 4 }}>
-              <ListItemIcon></ListItemIcon>
-              <ListItemText primary="Starred" />
+        <Box>
+          <ListItem key={"Home"} disablePadding>
+            <ListItemButton onClick={navigateHome}>
+              <IconButton color="secondary" edge="start">
+                <Home />
+              </IconButton>
+              <Typography flex="1" variant="h6" align="center">
+                Home
+              </Typography>
             </ListItemButton>
-          </List>
-        </Collapse>
-        <ListItem key={"Work Experience"} disablePadding>
-          <ListItemButton>
-            <IconButton color="secondary" edge="start">
-              <WorkHistory />
-            </IconButton>
-            <Typography flex="1" variant="h6" align="center">
-              Work Experience
-            </Typography>
-            {openWXP ? (
-              <ExpandLess
-                color="secondary"
-                onClick={() => {
-                  setOpenWXP(!openWXP);
-                }}
-              />
-            ) : (
-              <ExpandMore
-                color="secondary"
-                onClick={() => {
-                  setOpenWXP(!openWXP);
-                }}
-              />
-            )}
-          </ListItemButton>
-        </ListItem>
-        <Collapse in={openWXP} timeout="auto" unmountOnExit>
-          <List component="div" disablePadding>
-            <ListItemButton sx={{ pl: 4 }}>
-              <ListItemIcon></ListItemIcon>
-              <ListItemText primary="Starred" />
+          </ListItem>
+          <ListItem key={"Education"} disablePadding>
+            <ListItemButton onClick={navigateEdu}>
+              <IconButton color="secondary" edge="start">
+                <School />
+              </IconButton>
+              <Typography flex="1" variant="h6" align="center">
+                Education
+              </Typography>
             </ListItemButton>
-          </List>
-        </Collapse>
-        <ListItem key={"Projects"} disablePadding>
-          <ListItemButton>
-            <IconButton color="secondary" edge="start">
-              <Construction />
-            </IconButton>
-            <Typography flex="1" variant="h6" align="center">
-              Projects
-            </Typography>
-            {openProj ? (
-              <ExpandLess
-                color="secondary"
-                onClick={() => {
-                  setOpenProj(!openProj);
-                }}
-              />
-            ) : (
-              <ExpandMore
-                color="secondary"
-                onClick={() => {
-                  setOpenProj(!openProj);
-                }}
-              />
-            )}
-          </ListItemButton>
-        </ListItem>
-        <Collapse in={openProj} timeout="auto" unmountOnExit>
-          <List component="div" disablePadding>
-            <ListItemButton sx={{ pl: 4 }}>
-              <ListItemIcon></ListItemIcon>
-              <ListItemText primary="Starred" />
+          </ListItem>
+          <ListItem key={"Work Experience"} disablePadding>
+            <ListItemButton onClick={navigateWXP}>
+              <IconButton color="secondary" edge="start">
+                <WorkHistory />
+              </IconButton>
+              <Typography flex="1" variant="h6" align="center">
+                Work Experience
+              </Typography>
             </ListItemButton>
-          </List>
-        </Collapse>
+          </ListItem>
+          <ListItem key={"Skills"} disablePadding>
+            <ListItemButton onClick={navigateSkills}>
+              <IconButton color="secondary" edge="start">
+                <Engineering />
+              </IconButton>
+              <Typography flex="1" variant="h6" align="center">
+                Skills
+              </Typography>
+            </ListItemButton>
+          </ListItem>
+          <ListItem key={"Projects"} disablePadding>
+            <ListItemButton onClick={navigateProj}>
+              <IconButton color="secondary" edge="start">
+                <Construction />
+              </IconButton>
+              <Typography flex="1" variant="h6" align="center">
+                Projects
+              </Typography>
+            </ListItemButton>
+          </ListItem>
+          <ListItem key={"Contact"} disablePadding>
+            <ListItemButton onClick={navigateContact}>
+              <IconButton color="secondary" edge="start">
+                <Call />
+              </IconButton>
+              <Typography flex="1" variant="h6" align="center">
+                Contact
+              </Typography>
+            </ListItemButton>
+          </ListItem>
+        </Box>
       </List>
+      <div
+        style={{
+          display: "flex",
+          flex: 1,
+          alignItems: "flex-end",
+          justifyContent: "center",
+          marginBottom: "10px",
+        }}
+      >
+        <ButtonGroup size="medium" aria-label="medium button group">
+          <Button
+            key="Light"
+            onClick={() => {
+              props.setChosenTheme("light");
+            }}
+            color={props.theme == "light" ? "secondary" : "fontColor"}
+          >
+            <LightMode />
+          </Button>
+          <Button
+            key="System"
+            onClick={() => {
+              props.setChosenTheme("system");
+            }}
+            color={props.theme == "system" ? "secondary" : "fontColor"}
+          >
+            <SettingsBrightness />
+            <Typography variant="p" marginLeft="5px" fontSize="10px">
+              System
+            </Typography>
+          </Button>
+          <Button
+            key="Dark"
+            onClick={() => {
+              props.setChosenTheme("dark");
+            }}
+            color={props.theme == "dark" ? "secondary" : "fontColor"}
+          >
+            <DarkMode />
+          </Button>
+        </ButtonGroup>
+      </div>
     </Drawer>
   );
 };
