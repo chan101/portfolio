@@ -17,7 +17,7 @@ export const lightTheme = createTheme({
       main: '#0ec7e0',
     },
     tertiary: {
-      main: '#5d5d5d',
+      main: '#e2e2e2',
     },
     fontColor:{
       main: '#000000',
@@ -36,7 +36,7 @@ export const darkTheme = createTheme({
       main: '#0ec7e0',
     },
     tertiary: {
-      main: '#5d5d5d',
+      main: '#2d2d2d',
     },
     fontColor:{
       main: '#ffffff',
