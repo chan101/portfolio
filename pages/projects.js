@@ -1,5 +1,5 @@
 
-const Home = () => {
+const projects = () => {
  
 
   return (
@@ -7,4 +7,4 @@ const Home = () => {
   )
 };
 
-export default Home;
+export default projects;
