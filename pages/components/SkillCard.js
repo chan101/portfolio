@@ -66,6 +66,6 @@ const importAll = (r) => {
 const useSvg = importAll(require.context('../../public/svgs', false, /\.svg$/));
 
 
-export {SkillCard, useSvg}
+export default {SkillCard, useSvg};
 
 
