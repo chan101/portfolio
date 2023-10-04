@@ -1,11 +1,6 @@
 // pages/contact.js
-import { ThemeProvider } from "@mui/material/styles";
-import { useMyTheme } from "./components/ThemeControl";
-import Navbar from "./components/_Navbar";
 import {
-  CssBaseline,
   Typography,
-  Toolbar,
   Container,
   Card,
   CardContent,
@@ -24,7 +19,6 @@ import {
 } from "@mui/icons-material";
 
 const contact = () => {
-  const { chosenTheme, handleThemeChange, finalTheme } = useMyTheme();
 
   const handleEmail = () => {
     const email = "chandankumarchan1999@gmail.com";
@@ -52,19 +46,8 @@ const contact = () => {
   };
 
   return (
-    <ThemeProvider theme={finalTheme}>
-      <CssBaseline enableColorScheme="true" />
-      <Container>
-        <Navbar
-          title={"Contact"}
-          theme={chosenTheme}
-          setChosenTheme={handleThemeChange}
-        />
-      </Container>
-      <Container>
-        <Toolbar />
-      </Container>
-      <Container sx={{ display: "grid", placeItems: "center" }}>
+
+      <Container sx={{ display: "grid", placeItems: "center"}}>
         <Card sx={{ maxWidth: 350, margin: 2 }}>
           <CardContent>
             <Typography
@@ -132,7 +115,6 @@ const contact = () => {
           </CardContent>
         </Card>
       </Container>
-    </ThemeProvider>
   );
 };
 

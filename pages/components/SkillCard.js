@@ -15,7 +15,7 @@ import { useTheme } from "@mui/material/styles";
 export const SkillCard = (props) => {
   const theme = useTheme();
   return (
-    <Grid item xs={6} sm={4} md={3} lg={2} xl={1}>
+    <Grid item xs={6} sm={4} md={3} lg={2} xl={1.71}>
       <Card
         sx={{
           backgroundColor: theme.palette.tertiary.main,
@@ -32,11 +32,13 @@ export const SkillCard = (props) => {
             >
               {props.name}
             </Typography>
+            <div style={{ display:"grid", placeContent:"center"}}>
             <Image
               src={props.svg}
               alt="Java"
-              style={{ maxWidth: "100px", maxHeight: "100px" }}
+              style={{ maxWidth: "100px", maxHeight: "100px"}}
             />
+            </div>
             <Rating
               name="half-rating-read"
               defaultValue={props.rating}

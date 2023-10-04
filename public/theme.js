@@ -17,11 +17,14 @@ export const lightTheme = createTheme({
       main: '#0ec7e0',
     },
     tertiary: {
-      main: '#e2e2e2',
+      main: '#fffcfc',
     },
     fontColor:{
       main: '#000000',
     },
+    custom1:{
+      main: '#afafaf'
+    }
   },
 });
 
@@ -41,6 +44,9 @@ export const darkTheme = createTheme({
     fontColor:{
       main: '#ffffff',
     },
+    custom1:{
+      main: '#121212'
+    }
   },
 });
 

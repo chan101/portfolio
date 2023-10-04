@@ -1,0 +1,92 @@
+[
+    {
+        "title":"Web Development Technologies",
+        "skills":[
+            {
+                "name":"JavaScript",
+                "svg":"javascript",
+                "rating":"4.5"
+            },
+            {
+                "name":"React JS",
+                "svg":"reactjs",
+                "rating":"4.5"
+            },
+            {
+                "name":"Next JS",
+                "svg":"nextjs",
+                "rating":"3.5"
+            },
+            {
+                "name":"HTML5",
+                "svg":"html5",
+                "rating":"4.5"
+            },
+            {
+                "name":"CSS3",
+                "svg":"css3",
+                "rating":"4.5"
+            },
+            {
+                "name":"PHP",
+                "svg":"php",
+                "rating":"3"
+            }
+        ]
+    },
+    {
+        "title":"Backend Technologies",
+        "skills":[
+            {
+                "name":"Java",
+                "svg":"java",
+                "rating":"4.5"
+            },
+            {
+                "name":"Node JS",
+                "svg":"node",
+                "rating":"4"
+            },
+            {
+                "name":"Spring Boot",
+                "svg":"springboot",
+                "rating":"4"
+            },
+            {
+                "name":"Python",
+                "svg":"python",
+                "rating":"4"
+            },
+            {
+                "name":"Mongo DB",
+                "svg":"mongo",
+                "rating":"3.5"
+            },
+            {
+                "name":"SQL",
+                "svg":"sql",
+                "rating":"3.5"
+            },
+            {
+                "name":"C & C++",
+                "svg":"c",
+                "rating":"2"
+            }
+        ]
+    },
+    {
+        "title":"Other Tools and Technologies",
+        "skills":[
+            {
+                "name":"Bash",
+                "svg":"bash",
+                "rating":"3"
+            },
+            {
+                "name":"Git",
+                "svg":"git",
+                "rating":"4"
+            }
+        ]
+    }
+]

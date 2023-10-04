@@ -43,22 +43,28 @@ const MyDrawer = (props) => {
 
   const navigateHome = () => {
     router.push("/");
+    props.handleDrawer();
   };
   const navigateEdu = () => {
     router.push("/education");
+    props.handleDrawer();
   };
   const navigateWXP = () => {
     router.push("/work_XP");
+    props.handleDrawer();
   };
   const navigateSkills = () => {
     router.push("/skills");
+    props.handleDrawer();
   };
   const navigateProj = () => {
     router.push("/projects");
+    props.handleDrawer();
   };
 
   const navigateContact = () => {
     router.push("/contact");
+    props.handleDrawer();
   };
 
   return (
