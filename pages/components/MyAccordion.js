@@ -7,10 +7,22 @@ import {
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import SkillCard from "./SkillCard";
-import useSvg from "./loadSvgs";
 import { useTheme } from "@mui/material/styles";
 
 const MyAccordion = (props) => {
+  //svg
+  const importAll = (r) => {
+    let svgs = {};
+    r.keys().forEach((key) => {
+      const svgName = key.replace('./', '').replace('.svg', '');
+      svgs[svgName] = r(key).default;
+    });
+    return svgs;
+  };
+  
+  const useSvg = importAll(require.context('../../public/svgs', false, /\.svg$/));
+  
+
   const theme = useTheme();
   return (
     <Accordion
