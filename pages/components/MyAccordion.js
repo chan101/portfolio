@@ -10,7 +10,6 @@ import SkillCard from "./SkillCard";
 import { useTheme } from "@mui/material/styles";
 
 const MyAccordion = (props) => {
-  //svg
   const importAll = (r) => {
     let svgs = {};
     r.keys().forEach((key) => {
@@ -22,8 +21,8 @@ const MyAccordion = (props) => {
   
   const useSvg = importAll(require.context('../../public/svgs', false, /\.svg$/));
   
-
   const theme = useTheme();
+
   return (
     <Accordion
       defaultExpanded={false}
@@ -38,8 +37,13 @@ const MyAccordion = (props) => {
       </AccordionSummary>
       <AccordionDetails>
         <Grid container spacing={4}>
-          {props.skills.map((skill) => (
-            <SkillCard name={skill.name} svg={useSvg[skill.svg]} rating={skill.rating} />
+          {props.skills && useSvg && props.skills.map((skill, index) => (
+            <SkillCard
+              key={index}
+              name={skill.name}
+              svg={useSvg[skill.svg]}
+              rating={skill.rating}
+            />
           ))}
         </Grid>
       </AccordionDetails>
