@@ -6,7 +6,8 @@ import {
   Typography,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { SkillCard, useSvg } from "./SkillCard";
+import SkillCard from "./SkillCard";
+import useSvg from "./loadSvgs";
 import { useTheme } from "@mui/material/styles";
 
 const MyAccordion = (props) => {
