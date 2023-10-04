@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { darkTheme, lightTheme } from "@/public/theme";
 
-export const useMyTheme = () => {
+const useMyTheme = () => {
   const [systemTheme, setSystemTheme] = useState("dark");
   const [chosenTheme, setChosenTheme] = useState("system");
 
@@ -35,3 +35,5 @@ export const useMyTheme = () => {
       : lightTheme;
   return { chosenTheme, handleThemeChange, finalTheme };
 };
+
+export default useMyTheme;

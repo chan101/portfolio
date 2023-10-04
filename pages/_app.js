@@ -1,7 +1,7 @@
 //import '@/styles/globals.css'
 import '@/styles/scrollbar.css'
 import { ThemeProvider } from "@mui/material/styles";
-import { useMyTheme } from "./components/ThemeControl";
+import useMyTheme from "./components/ThemeControl";
 import { CssBaseline, Toolbar } from "@mui/material";
 import Navbar from "./components/Navbar";
 import { useRouter } from 'next/router';

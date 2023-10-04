@@ -12,7 +12,7 @@ import Image from "next/image";
 import { useTheme } from "@mui/material/styles";
 
 
-export const SkillCard = (props) => {
+const SkillCard = (props) => {
   const theme = useTheme();
   return (
     <Grid item xs={6} sm={4} md={3} lg={2} xl={1.71}>
@@ -63,9 +63,9 @@ const importAll = (r) => {
   return svgs;
 };
 
-export const useSvg = importAll(require.context('../../public/svgs', false, /\.svg$/));
+const useSvg = importAll(require.context('../../public/svgs', false, /\.svg$/));
 
 
-
+export {SkillCard, useSvg}
 
 
