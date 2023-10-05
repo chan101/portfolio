@@ -1,7 +1,7 @@
 // pages/skills.js
 
 import skillsData from "@/data/skills.json"
-import MyAccordion from "./components/MyAccordion";
+import MyAccordion from "../components/MyAccordion";
 import { useTheme } from "@mui/material/styles";
 const skills = () => {
   const theme = useTheme();

@@ -2,10 +2,10 @@
 import '@/styles/scrollbar.css'
 import { ThemeProvider } from "@mui/material/styles";
 import { CssBaseline, Toolbar } from "@mui/material";
-import Navbar from "./components/Navbar";
+import Navbar from "../components/Navbar";
 import { useRouter } from 'next/router';
 import { useEffect, useState } from "react";
-import { darkTheme, lightTheme } from "@/public/theme";
+import { useMyTheme } from '../components/ThemeControl';
 
 export default function App({ Component, pageProps }) {
   const { chosenTheme, handleThemeChange, finalTheme } = useMyTheme();
@@ -52,37 +52,3 @@ export default function App({ Component, pageProps }) {
 }
 
 
-const useMyTheme = () => {
-  const [systemTheme, setSystemTheme] = useState("dark");
-  const [chosenTheme, setChosenTheme] = useState("system");
-
-  useEffect(() => {
-    detectTheme();
-  }, []);
-
-  const detectTheme = () => {
-    if (typeof window !== "undefined") {
-      const isDarkMode = window.matchMedia(
-        "(prefers-color-scheme: dark)"
-      ).matches;
-      setSystemTheme(isDarkMode ? "dark" : "light");
-
-      const userTheme = localStorage.getItem("chosenTheme");
-      setChosenTheme(userTheme !== null ? userTheme : "system");
-    }
-  };
-
-  const handleThemeChange = (theme) => {
-    setChosenTheme(theme);
-    localStorage.setItem("chosenTheme", theme);
-  };
-  const finalTheme =
-    chosenTheme === "system"
-      ? systemTheme === "dark"
-        ? darkTheme
-        : lightTheme
-      : chosenTheme === "dark"
-      ? darkTheme
-      : lightTheme;
-  return { chosenTheme, handleThemeChange, finalTheme };
-};

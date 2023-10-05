@@ -19,7 +19,7 @@ const MyAccordion = (props) => {
     return svgs;
   };
   
-  const useSvg = importAll(require.context('../../public/svgs', false, /\.svg$/));
+  const useSvg = importAll(require.context('../public/svgs', false, /\.svg$/));
   
   const theme = useTheme();
 
