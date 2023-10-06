@@ -1,0 +1,56 @@
+[
+  {
+    "title":"Savings and Expense Management",
+    "date":"August 2019",
+    "tech":"JavaScript, PHP, HTML, CSS and MySql",
+    "description":"Household savings and expenditure management systems allows every household to track their saving and expenses and manage them.",
+    "source":"https://github.com/chan101/household_savings_and_expenditure_management_system",
+    "live":"test",
+    "imagesFolder":"hsem"
+  },
+  {
+    "title":"Auction_24x7",
+    "date":"January 2020",
+    "tech":"JavaScript, PHP, HTML, CSS and MySql",
+    "description":"Household savings and expenditure management systems allows every household to track their saving and expenses and manage them.",
+    "source":"https://github.com/chan101/Auction_24x7",
+    "live":"test",
+    "imagesFolder":"a247"
+  },
+  {
+    "title":"Gym Management",
+    "date":"January 2020",
+    "tech":"JavaScript, PHP, HTML, CSS and MySql",
+    "description":"Household savings and expenditure management systems allows every household to track their saving and expenses and manage them.",
+    "source":"https://github.com/chan101/GYM_management_system",
+    "live":"test",
+    "imagesFolder":"gym"
+  },
+  {
+    "title":"Skin Cancer Detection",
+    "date":"January 2020",
+    "tech":"JavaScript, PHP, HTML, CSS and MySql",
+    "description":"Household savings and expenditure management systems allows every household to track their saving and expenses and manage them.",
+    "source":"https://github.com/chan101/skin_cancer_detection",
+    "live":"test",
+    "imagesFolder":"skin"
+  },
+  {
+    "title":"Dev Tools",
+    "date":"January 2020",
+    "tech":"JavaScript, PHP, HTML, CSS and MySql",
+    "description":"Household savings and expenditure management systems allows every household to track their saving and expenses and manage them.",
+    "source":"https://github.com/chan101/DevTools",
+    "live":"test",
+    "imagesFolder":"dev"
+  },
+  {
+    "title":"Portfolio",
+    "date":"Oct 2023",
+    "tech":"JavaScript,HTML and CSS",
+    "description":"A port",
+    "source":"https://github.com/chan101/household_savings_and_expenditure_management_system",
+    "live":"test",
+    "imagesFolder":"port"
+  }
+]

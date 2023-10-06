@@ -18,7 +18,11 @@ import {
   WhatsApp,
 } from "@mui/icons-material";
 
+
+import { useTheme } from "@mui/material/styles";
+
 const contact = () => {
+  const theme = useTheme();
 
   const handleEmail = () => {
     const email = "chandankumarchan1999@gmail.com";
@@ -48,7 +52,7 @@ const contact = () => {
   return (
 
       <Container sx={{ display: "grid", placeItems: "center"}}>
-        <Card sx={{ maxWidth: 350, margin: 2 }}>
+        <Card sx={{ maxWidth: 350, margin: 2, backgroundColor: theme.palette.custom1.main }} >
           <CardContent>
             <Typography
               sx={{ fontSize: 14 }}

@@ -14,7 +14,7 @@ export const lightTheme = createTheme({
       main: '#ffffff',
     },
     secondary: {
-      main: '#0ec7e0',
+      main: '#0a8ed0',
     },
     tertiary: {
       main: '#fffcfc',
@@ -23,7 +23,7 @@ export const lightTheme = createTheme({
       main: '#000000',
     },
     custom1:{
-      main: '#afafaf'
+      main: '#bdbdbd'
     }
   },
 });

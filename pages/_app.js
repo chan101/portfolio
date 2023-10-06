@@ -37,7 +37,7 @@ export default function App({ Component, pageProps }) {
   return (
     <main>
       <ThemeProvider theme={finalTheme}>
-        <CssBaseline enableColorScheme="true" />
+        <CssBaseline />
 
         <Navbar
           title={title}
