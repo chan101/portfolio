@@ -70,7 +70,7 @@ const MyDrawer = (props) => {
   return (
     <div>
     <Backdrop
-        sx={{ color: "#fff", zIndex: 1, backdropFilter: "blur(4px)"}}
+        sx={{ color: "#fff", zIndex: 3, backdropFilter: "blur(4px)"}}
         open={props.drawToggle}
         onClick={props.handleDrawer}
       ></Backdrop>
