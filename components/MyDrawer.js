@@ -103,16 +103,6 @@ const MyDrawer = (props) => {
               </Typography>
             </ListItemButton>
           </ListItem>
-          <ListItem key={"Education"} disablePadding>
-            <ListItemButton onClick={navigateEdu}>
-              <IconButton color="secondary" edge="start">
-                <School />
-              </IconButton>
-              <Typography flex="1" variant="h6" align="center">
-                Education
-              </Typography>
-            </ListItemButton>
-          </ListItem>
           <ListItem key={"Work Experience"} disablePadding>
             <ListItemButton onClick={navigateWXP}>
               <IconButton color="secondary" edge="start">
@@ -120,6 +110,16 @@ const MyDrawer = (props) => {
               </IconButton>
               <Typography flex="1" variant="h6" align="center">
                 Work Experience
+              </Typography>
+            </ListItemButton>
+          </ListItem>
+          <ListItem key={"Education"} disablePadding>
+            <ListItemButton onClick={navigateEdu}>
+              <IconButton color="secondary" edge="start">
+                <School />
+              </IconButton>
+              <Typography flex="1" variant="h6" align="center">
+                Education
               </Typography>
             </ListItemButton>
           </ListItem>

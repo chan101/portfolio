@@ -1,9 +1,12 @@
+import MyVerticalTimeline from "@/components/MyVerticalTimeLine";
+import workData from "@/data/work.json"
+
 
 const work_XP = () => {
  
 
   return (
-    <p>Under development</p>
+    <MyVerticalTimeline workData={workData}/>
   )
 };
 

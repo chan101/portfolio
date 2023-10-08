@@ -1,10 +1,49 @@
+import Work_XP from "./work_XP";
+import Education from "./education";
+import Projects from "./projects";
+import Skills from "./skills";
+import Contact from "./contact";
+import {
+  ChevronLeft,
+  School,
+  WorkHistory,
+  Engineering,
+  Construction,
+  Call,
+} from "@mui/icons-material";
+
+import CustomChip from "@/components/CustomChip";
 
 const Home = () => {
- 
-
   return (
-    <p>Under development</p>
-  )
+    <div>
+      <CustomChip
+        icon={<WorkHistory sx={{ marginRight: "25px", fontSize: "30px" }} />}
+        title="Work Experience"
+      />
+      <Work_XP />
+      <CustomChip
+        icon={<School sx={{ marginRight: "25px", fontSize: "30px" }} />}
+        title="Education"
+      />
+      <Education />
+      <CustomChip
+        icon={<Engineering sx={{ marginRight: "25px", fontSize: "30px" }} />}
+        title="Skills"
+      />
+      <Skills />
+      <CustomChip
+        icon={<Construction sx={{ marginRight: "25px", fontSize: "30px" }} />}
+        title="Projects"
+      />
+      <Projects />
+      <CustomChip
+        icon={<Call sx={{ marginRight: "25px", fontSize: "30px" }} />}
+        title="Contact"
+      />
+      <Contact />
+    </div>
+  );
 };
 
 export default Home;

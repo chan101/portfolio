@@ -1,10 +1,11 @@
-
+import MyVerticalTimeline from "@/components/MyVerticalTimeLine";
+import educationData from "@/data/education.json"
 
 const Education = () => {
 
     return(
 
-        <p>test</p>
+        <MyVerticalTimeline educationData={educationData}/>
     )
 }
 export default Education;

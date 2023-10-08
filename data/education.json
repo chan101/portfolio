@@ -1,0 +1,23 @@
+[
+    {
+        "date":"June 2021",
+        "Institution":"Sapthagiri College of Engineering",
+        "location":"Bengaluru",
+        "Course":"Bachelor of Engineering - Information Science Engineering",
+        "url":"https://www.sapthagiri.edu.in/"
+    },
+    {
+        "date":"March 2017",
+        "Institution":"M.E.S Kishore Kendra",
+        "location":"Bengaluru",
+        "Course":"Class XII - PCMB",
+        "url":"https://mesinstitutions.in/web/mes-kk-pu-college"
+    },
+    {
+        "date":"April 2015",
+        "Institution":"Widia Poorna Prajna School",
+        "location":"Bengaluru",
+        "Course":"Class X - S.S.L.C",
+        "url":"https://www.wpps.in/"
+    }
+]
