@@ -14,9 +14,11 @@ import {
 
 import CustomChip from "@/components/CustomChip";
 
+import {Container} from "@mui/material";
+
 const Home = () => {
   return (
-    <div>
+    <Container sx={{display:"grid", placeItems:"center"}}>
       <CustomChip
         icon={<WorkHistory sx={{ marginRight: "25px", fontSize: "30px" }} />}
         title="Work Experience"
@@ -42,7 +44,7 @@ const Home = () => {
         title="Contact"
       />
       <Contact />
-    </div>
+    </Container>
   );
 };
 
