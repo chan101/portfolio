@@ -11,7 +11,8 @@ const MyVerticalTimeline = (props) => {
   const theme = useTheme();
 
   return (
-    <VerticalTimeline lineColor={theme.palette.secondary.main}>
+    <VerticalTimeline 
+animate={false} lineColor={theme.palette.secondary.main}>
       {props.educationData && props.educationData.map((data) => (
         <VerticalTimelineElement
           iconOnClick={() => {
