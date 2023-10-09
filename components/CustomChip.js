@@ -1,7 +1,7 @@
 import { Divider,Typography } from "@mui/material";
 const CustomChip = (props) => {
   return (
-    <div style={{ margin: "100px" }}>
+    <div style={{ marginTop: "100px", marginBottom: "100px" }}>
       <Divider>
         <div
           style={{ display: "flex", justifyContent: "start", marginTop: "5px" }}
