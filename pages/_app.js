@@ -17,6 +17,9 @@ export default function App({ Component, pageProps }) {
     if(pathname=='/'){
       setTitle("Home")
     }
+    else if(pathname=='/about'){
+      setTitle("About")
+    }
     else if(pathname=='/education'){
       setTitle("Education")
     }
@@ -38,7 +41,6 @@ export default function App({ Component, pageProps }) {
     <main>
       <ThemeProvider theme={finalTheme}>
         <CssBaseline />
-
         <Navbar
           title={title}
           theme={chosenTheme}

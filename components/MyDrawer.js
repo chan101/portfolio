@@ -13,6 +13,7 @@ import {
 
 import {
   ChevronLeft,
+  AccountCircle,
   School,
   WorkHistory,
   Engineering,
@@ -43,6 +44,10 @@ const MyDrawer = (props) => {
 
   const navigateHome = () => {
     router.push("/");
+    props.handleDrawer();
+  };
+  const navigateAbout = () => {
+    router.push("/about");
     props.handleDrawer();
   };
   const navigateEdu = () => {
@@ -100,6 +105,16 @@ const MyDrawer = (props) => {
               </IconButton>
               <Typography flex="1" variant="h6" align="center">
                 Home
+              </Typography>
+            </ListItemButton>
+          </ListItem>
+          <ListItem key={"About"} disablePadding>
+            <ListItemButton onClick={navigateAbout}>
+              <IconButton color="secondary" edge="start">
+                <AccountCircle />
+              </IconButton>
+              <Typography flex="1" variant="h6" align="center">
+                About
               </Typography>
             </ListItemButton>
           </ListItem>

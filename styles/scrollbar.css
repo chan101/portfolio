@@ -29,6 +29,6 @@
     background-color: #555; /* Change thumb color on hover */
   }
 
-  .timeline-line-light {
-    background-color: #ccc;
+  #resume:hover{
+    cursor: pointer;
   }
