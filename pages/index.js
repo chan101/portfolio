@@ -1,3 +1,4 @@
+import Name from "@/components/Name";
 import About from "./about";
 import Work_XP from "./work_XP";
 import Education from "./education";
@@ -5,7 +6,7 @@ import Projects from "./projects";
 import Skills from "./skills";
 import Contact from "./contact";
 import {
-  ChevronLeft,
+  AccountCircle,
   School,
   WorkHistory,
   Engineering,
@@ -20,6 +21,11 @@ import {Container} from "@mui/material";
 const Home = () => {
   return (
     <Container sx={{display:"grid", placeItems:"center"}}>
+    <Name/>
+    <CustomChip
+        icon={<AccountCircle sx={{ marginRight: "25px", fontSize: "30px" }} />}
+        title="About Me"
+      />
       <About/>
       <CustomChip
         icon={<WorkHistory sx={{ marginRight: "25px", fontSize: "30px" }} />}
