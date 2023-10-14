@@ -6,6 +6,9 @@ import {
   Tooltip,
 } from "@mui/material";
 import { AdfScanner } from "@mui/icons-material";
+import pic from "@/public/pic.jpg"
+
+import Image from "next/image";
 
 const About = () => {
   const downloadResume = () => {
@@ -44,10 +47,12 @@ const About = () => {
           >
             <Avatar
               alt="Chan"
-              src="/static/images/avatar/1.jpg"
+              src="/public/pic.jpg"
               sx={{ width: 250, height: 250 }}
-              variant="rounded"
-            />
+              variant="circular">
+            <Image src={pic} layout="fill"/>
+          </Avatar>
+
             <Tooltip title="Download Resume">
               <div
                 id="resume"

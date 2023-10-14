@@ -8,8 +8,8 @@ import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 const FullscreenCarousel = (props) => {
   return (
     <Backdrop
-      sx={{ color: "#fff", zIndex: 1101, backdropFilter: "blur(4px)" }}
-      open={true}
+      sx={{ color: "#fff", zIndex: 1101, backdropFilter: "blur(4px)", display:"grid", placeContent:"center"}}
+      open={true} 
     >
       <div
         style={{
@@ -51,7 +51,7 @@ const FullscreenCarousel = (props) => {
                     top: "50%",
                     left: "0",
                     zIndex: 2,
-                    fontSize: "3em",
+                    fontSize: "120%",
                   }}
                 />
               )
@@ -67,7 +67,7 @@ const FullscreenCarousel = (props) => {
                     top: "50%",
                     right: "0",
                     zIndex: 2,
-                    fontSize: "3em", // Adjust the font size to change button size
+                    fontSize: "120%", // Adjust the font size to change button size
                   }}
                 />
               )
