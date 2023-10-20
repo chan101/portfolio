@@ -5,7 +5,7 @@
     "tech":"JavaScript, PHP, HTML, CSS and MySql",
     "description":"Household savings and expenditure management systems allows every household to track their saving and expenses and manage them.",
     "source":"https://github.com/chan101/household_savings_and_expenditure_management_system",
-    "live":"test",
+    "live":"https://scorpion-absolute-recently.ngrok-free.app/household_savings_and_expenditure_management_system/",
     "imagesFolder":"hsem"
   },
   {
@@ -14,7 +14,7 @@
     "tech":"JavaScript, PHP, HTML, CSS and MySql",
     "description":"Household savings and expenditure management systems allows every household to track their saving and expenses and manage them.",
     "source":"https://github.com/chan101/Auction_24x7",
-    "live":"test",
+    "live":"https://scorpion-absolute-recently.ngrok-free.app/Auction_24x7/",
     "imagesFolder":"a247"
   },
   {
@@ -41,7 +41,7 @@
     "tech":"JavaScript, PHP, HTML, CSS and MySql",
     "description":"Household savings and expenditure management systems allows every household to track their saving and expenses and manage them.",
     "source":"https://github.com/chan101/DevTools",
-    "live":"test",
+    "live":"https://scorpion-absolute-recently.ngrok-free.app/",
     "imagesFolder":"dev"
   },
   {
