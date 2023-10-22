@@ -1,5 +1,40 @@
 [
   {
+    "title":"Portfolio",
+    "date":"Oct 2023",
+    "tech":"Next JS and React JS",
+    "description":"A portfolio site",
+    "source":"https://github.com/chan101/portfolio",
+    "live":"https://chan101.github.io/portfolio/",
+    "imagesFolder":"port"
+  },
+  {
+    "title":"Dev Tools",
+    "date":"Jan 2023",
+    "tech":"React JS and Node JS ",
+    "description":"Built a tool to make my work more efficient.",
+    "source":"https://github.com/chan101/DevTools",
+    "live":"https://scorpion-absolute-recently.ngrok-free.app/",
+    "imagesFolder":"dev"
+  },
+  {
+    "title":"Skin Cancer Detection",
+    "date":"May 2021",
+    "tech":"Python, Tensorflow, HTML and CSS.",
+    "description":"A machine learning project which detects skin cancer based on the input using model developed using thousands of melanoma affected skin.",
+    "source":"https://github.com/chan101/skin_cancer_detection",
+    "imagesFolder":"skin"
+  },
+  {
+    "title":"Auction_24x7",
+    "date":"January 2021",
+    "tech":"JavaScript, PHP, HTML, CSS and MySql",
+    "description":"Household savings and expenditure management systems allows every household to track their saving and expenses and manage them.",
+    "source":"https://github.com/chan101/Auction_24x7",
+    "live":"https://scorpion-absolute-recently.ngrok-free.app/Auction_24x7/",
+    "imagesFolder":"a247"
+  },
+  {
     "title":"Savings and Expense Management",
     "date":"August 2019",
     "tech":"JavaScript, PHP, HTML, CSS and MySql",
@@ -9,48 +44,11 @@
     "imagesFolder":"hsem"
   },
   {
-    "title":"Auction_24x7",
-    "date":"January 2020",
-    "tech":"JavaScript, PHP, HTML, CSS and MySql",
-    "description":"Household savings and expenditure management systems allows every household to track their saving and expenses and manage them.",
-    "source":"https://github.com/chan101/Auction_24x7",
-    "live":"https://scorpion-absolute-recently.ngrok-free.app/Auction_24x7/",
-    "imagesFolder":"a247"
-  },
-  {
     "title":"Gym Management",
     "date":"January 2020",
-    "tech":"JavaScript, PHP, HTML, CSS and MySql",
+    "tech":"C++",
     "description":"Household savings and expenditure management systems allows every household to track their saving and expenses and manage them.",
     "source":"https://github.com/chan101/GYM_management_system",
-    "live":"test",
     "imagesFolder":"gym"
-  },
-  {
-    "title":"Skin Cancer Detection",
-    "date":"January 2020",
-    "tech":"JavaScript, PHP, HTML, CSS and MySql",
-    "description":"Household savings and expenditure management systems allows every household to track their saving and expenses and manage them.",
-    "source":"https://github.com/chan101/skin_cancer_detection",
-    "live":"test",
-    "imagesFolder":"skin"
-  },
-  {
-    "title":"Dev Tools",
-    "date":"January 2020",
-    "tech":"JavaScript, PHP, HTML, CSS and MySql",
-    "description":"Household savings and expenditure management systems allows every household to track their saving and expenses and manage them.",
-    "source":"https://github.com/chan101/DevTools",
-    "live":"https://scorpion-absolute-recently.ngrok-free.app/",
-    "imagesFolder":"dev"
-  },
-  {
-    "title":"Portfolio",
-    "date":"Oct 2023",
-    "tech":"JavaScript,HTML and CSS",
-    "description":"A port",
-    "source":"https://github.com/chan101/household_savings_and_expenditure_management_system",
-    "live":"test",
-    "imagesFolder":"port"
   }
 ]

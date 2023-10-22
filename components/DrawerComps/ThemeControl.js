@@ -1,5 +1,5 @@
 
-import { darkTheme, lightTheme } from "../public/theme";
+import { darkTheme, lightTheme } from "../../public/theme";
 import { useEffect, useState } from "react";
 
 export const useMyTheme = () => {

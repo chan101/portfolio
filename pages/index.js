@@ -20,8 +20,9 @@ import {Container} from "@mui/material";
 
 const Home = () => {
   return (
-    <Container sx={{display:"grid", placeItems:"center"}}>
-    <Name/>
+    <>
+    <Container sx={{display:"grid", placeItems:"center"}}><Name/></Container>
+    <Container>
     <CustomChip
         icon={<AccountCircle sx={{ marginRight: "25px", fontSize: "30px" }} />}
         title="About Me"
@@ -53,6 +54,7 @@ const Home = () => {
       />
       <Contact />
     </Container>
+    </>
   );
 };
 

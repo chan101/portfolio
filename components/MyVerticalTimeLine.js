@@ -3,7 +3,7 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { School, LocationOn } from "@mui/icons-material";
+import { School, WorkHistory, LocationOn } from "@mui/icons-material";
 import { useTheme } from "@mui/material/styles";
 import { Tooltip, Typography } from "@mui/material";
 
@@ -55,7 +55,7 @@ animate={false} lineColor={theme.palette.secondary.main}>
           }}
           icon={
             <Tooltip title="Visit website">
-              <School />
+              <WorkHistory />
             </Tooltip>
           }
         >

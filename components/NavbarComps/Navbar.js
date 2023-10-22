@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Box } from "@mui/material";
 
-import MyAppBar from "./NavbarComps/MyAppBar";
-import MyDrawer from "./MyDrawer";
+import MyAppBar from "./MyAppBar";
+import MyDrawer from "../DrawerComps/MyDrawer";
 
 export default function Navbar(props) {
   const [drawToggle, setDrawToggle] = useState(false);

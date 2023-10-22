@@ -2,10 +2,10 @@
 import '@/styles/scrollbar.css'
 import { ThemeProvider } from "@mui/material/styles";
 import { CssBaseline, Toolbar } from "@mui/material";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/NavbarComps/Navbar";
 import { useRouter } from 'next/router';
 import { useEffect, useState } from "react";
-import { useMyTheme } from '../components/ThemeControl';
+import { useMyTheme } from '../components/DrawerComps/ThemeControl';
 
 export default function App({ Component, pageProps }) {
   const { chosenTheme, handleThemeChange, finalTheme } = useMyTheme();

@@ -49,11 +49,13 @@ export default function ProjectCard(props) {
               <GitHub fontSize="large" />
             </IconButton>
           </Tooltip>
-          <Tooltip title="Live Preview">
+
+          {props.live && <Tooltip title="Live Preview">
             <IconButton color="secondary" aria-label="Live Preview" onClick={()=>{window.open(props.live,'_blank')}}>
               <Preview fontSize="large" />
             </IconButton>
-          </Tooltip>
+          </Tooltip>}
+
           <ExpandMoreMain
             expand={expanded}
             onClick={handleExpandClick}
