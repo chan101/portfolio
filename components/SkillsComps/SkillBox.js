@@ -9,7 +9,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import SkillCard from "./SkillCard";
 import { useTheme } from "@mui/material/styles";
 
-const MyAccordion = (props) => {
+const SkillBox = (props) => {
   const importAll = (r) => {
     let svgs = {};
     r.keys().forEach((key) => {
@@ -19,7 +19,7 @@ const MyAccordion = (props) => {
     return svgs;
   };
   
-  const useSvg = importAll(require.context('../public/svgs', false, /\.svg$/));
+  const useSvg = importAll(require.context('@/public/svgs', false, /\.svg$/));
   
   const theme = useTheme();
 
@@ -51,4 +51,4 @@ const MyAccordion = (props) => {
   );
 };
 
-export default MyAccordion;
+export default SkillBox;

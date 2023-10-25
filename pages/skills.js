@@ -1,7 +1,7 @@
 // pages/skills.js
 
 import skillsData from "@/data/skills.json"
-import MyAccordion from "../components/MyAccordion";
+import SkillBox from "../components/SkillsComps/SkillBox";
 import { useTheme } from "@mui/material/styles";
 const skills = () => {
   const theme = useTheme();
@@ -9,7 +9,7 @@ const skills = () => {
       <div>
       {
         skillsData.map((skill)=>(
-          <MyAccordion title={skill.title} skills={skill.skills}/>
+          <SkillBox title={skill.title} skills={skill.skills}/>
         ))
       }
       </div>

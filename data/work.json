@@ -1,9 +1,27 @@
 [
-    {
-        "date":"August 2021 - Present",
-        "Organisation":"Tata Consultancy Services",
-        "location":"Bengaluru",
-        "Role":"FullStack Developer",
-        "url":"https://www.tcs.com/"
-    }
+  {
+    "date": "August 2021 - Present",
+    "Organisation": "Tata Consultancy Services",
+    "location": "Bengaluru",
+    "Role": "Systems Engineer",
+    "url": "https://www.tcs.com/",
+    "workDetails": [
+      {
+        "title": "Responsibilities",
+        "list": [
+          "\u25B8 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
+          "\u25B8 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "\u25B8 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget."
+        ]
+      },
+      {
+        "title": "Achievements",
+        "list": [
+          "\u25B8 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
+          "\u25B8 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "\u25B8 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget."
+        ]
+      }
+    ]
+  }
 ]

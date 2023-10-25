@@ -11,7 +11,6 @@ import Image from "next/image";
 
 import { useTheme } from "@mui/material/styles";
 
-
 const SkillCard = (props) => {
   const theme = useTheme();
   return (
@@ -32,12 +31,12 @@ const SkillCard = (props) => {
             >
               {props.name}
             </Typography>
-            <div style={{ display:"grid", placeContent:"center"}}>
-            <Image
-              src={props.svg}
-              alt="Java"
-              style={{ maxWidth: "100px", maxHeight: "100px"}}
-            />
+            <div style={{ display: "grid", placeContent: "center" }}>
+              <Image
+                src={props.svg}
+                alt="Java"
+                style={{ maxWidth: "100px", maxHeight: "100px" }}
+              />
             </div>
             <Rating
               name="half-rating-read"
@@ -54,7 +53,4 @@ const SkillCard = (props) => {
 
 //svg stuff
 
-
 export default SkillCard;
-
-

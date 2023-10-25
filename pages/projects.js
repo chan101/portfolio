@@ -1,4 +1,4 @@
-import ProjectCard from "@/components/ProjectCard";
+import ProjectCard from "@/components/ProjectComps/ProjectCard";
 import { Grid } from "@mui/material";
 import projectsData from "../data/projects.json";
 

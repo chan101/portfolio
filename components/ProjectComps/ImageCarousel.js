@@ -19,26 +19,26 @@ const ImageCarousel = (props) => {
   };
   let ImageContext;
   if('hsem'===props.imagesFolder){
-    ImageContext = require.context("../public/project/hsem", false, /\.png$/);
+    ImageContext = require.context("@/public/project/hsem", false, /\.png$/);
   }
   else if('a247'===props.imagesFolder){
-    ImageContext = require.context("../public/project/a247", false, /\.png$/);
+    ImageContext = require.context("@/public/project/a247", false, /\.png$/);
   }
   
   else if('gym'===props.imagesFolder){
-    ImageContext = require.context("../public/project/gym", false, /\.png$/);
+    ImageContext = require.context("@/public/project/gym", false, /\.png$/);
   }
   
   else if('skin'===props.imagesFolder){
-    ImageContext = require.context("../public/project/skin", false, /\.png$/);
+    ImageContext = require.context("@/public/project/skin", false, /\.png$/);
   }
 
   else if('dev'===props.imagesFolder){
-    ImageContext = require.context("../public/project/dev", false, /\.png$/);
+    ImageContext = require.context("@/public/project/dev", false, /\.png$/);
   }
 
   else if('port'===props.imagesFolder){
-    ImageContext = require.context("../public/project/port", false, /\.png$/);
+    ImageContext = require.context("@/public/project/port", false, /\.png$/);
   }
   const images = importAll(ImageContext);
   
