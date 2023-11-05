@@ -12,7 +12,7 @@ const MyListItem = (props) => {
         <IconButton color="secondary" edge="start">
           {props.icon}
         </IconButton>
-        <Typography flex="1" variant="h6" align="center">
+        <Typography flex="1" variant="p" align="center" sx={{ fontSize:'20px'}}>
           {props.name}
         </Typography>
       </ListItemButton>

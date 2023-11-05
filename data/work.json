@@ -11,15 +11,20 @@
         "list": [
           "\u25B8 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
           "\u25B8 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          "\u25B8 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget."
+          "\u25B8 ."
+        ]
+      },
+      {
+        "title": "Projects",
+        "list": [
+          "\u25B8 TCS BaNCS a banking product implemented for OP Financial Group (client)."
         ]
       },
       {
         "title": "Achievements",
         "list": [
-          "\u25B8 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
-          "\u25B8 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          "\u25B8 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget."
+          "\u25B8 Received 'Star of the Month' for completing mutilple complex user stories in the absence of a senior resource.",
+          "\u25B8 Cleared TCS's Wings exam on MERN Stack and received a Hi-Talent tag."
         ]
       }
     ]
