@@ -1,0 +1,23 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    div {
+      color: white;
+      font: 120px serif;
+      height: 100%;
+    }
+  </style>
+
+  <polygon points="5,5 195,5 195,195 5,195" />
+
+  <!-- Common use case: embed HTML text into SVG -->
+  <foreignObject x="35" y="30" width="160" height="160">
+    <!--
+      In the context of SVG embedded in an HTML document, the XHTML
+      namespace could be omitted, but it is mandatory in the
+      context of an SVG document
+    -->
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      &#x45;&#x6e;
+    </div>
+  </foreignObject>
+</svg>

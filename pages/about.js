@@ -9,6 +9,7 @@ import { AdfScanner } from "@mui/icons-material";
 import pic from "@/public/pic.jpg"
 
 import Image from "next/image";
+import aboutData from "@/data/about.json"
 
 const About = () => {
   const downloadResume = () => {
@@ -26,13 +27,7 @@ const About = () => {
             }}
           >
             <Typography variant="subtitle1" align="center">
-              Passionate and enthusiastic software developer who approaches
-              challenges with creativity and determination. I'm the kind of guy
-              who, before buying anything, will explore the possibility of
-              crafting a DIY version, always eager to learn and experiment.My
-              dream is to join a team where colleagues become friends, working
-              together to create innovative solutions and having a great time
-              along the way.
+              {aboutData.about}
             </Typography>
           </Container>
         </Grid>

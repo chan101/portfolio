@@ -9,22 +9,24 @@
       {
         "title": "Responsibilities",
         "list": [
-          "\u25B8 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.",
-          "\u25B8 Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          "\u25B8 ."
+          "\u25B8 Create new pages, integrate APIs and add functionalities using Struts framework, Java and Javascript.",
+          "\u25B8 Train and provide K.T. to junior devs and ensure their project readiness."
         ]
       },
       {
         "title": "Projects",
         "list": [
-          "\u25B8 TCS BaNCS a banking product implemented for OP Financial Group (client)."
+          "\u25B8 TCS BaNCS: A banking product implemented for OP Financial Group (client).",
+          "\u25B8 DevTools: A multi functional tool implemented to streamline manual tasks."
         ]
+
       },
       {
         "title": "Achievements",
         "list": [
           "\u25B8 Received 'Star of the Month' for completing mutilple complex user stories in the absence of a senior resource.",
-          "\u25B8 Cleared TCS's Wings exam on MERN Stack and received a Hi-Talent tag."
+          "\u25B8 Cleared TCS's Wings exam on MERN Stack and received a Hi-Talent tag.",
+          "\u25B8 Single-handedly designed and implemented a tool with multiple functionality which streamlined several multi-step manual processes into a single-click solution, significantly enhancing workflow efficiency of developers and testers."
         ]
       }
     ]

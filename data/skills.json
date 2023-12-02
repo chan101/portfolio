@@ -88,5 +88,25 @@
                 "rating":"4"
             }
         ]
+    },
+    {
+        "title":"Spoken Languages",
+        "skills":[
+            {
+                "name":"Kannada",
+                "svg":"kannada",
+                "rating":"5"
+            },
+            {
+                "name":"English",
+                "svg":"english",
+                "rating":"5"
+            },
+            {
+                "name":"Hindi",
+                "svg":"hindi",
+                "rating":"3.5"
+            }
+        ]
     }
 ]
