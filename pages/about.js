@@ -12,9 +12,6 @@ import Image from "next/image";
 import aboutData from "@/data/about.json"
 
 const About = () => {
-  const downloadResume = () => {
-    alert("resume yet to be added");
-  };
   return (
     <>
       <Grid container direction="column-reverse">
@@ -49,14 +46,16 @@ const About = () => {
           </Avatar>
 
             <Tooltip title="Download Resume">
-              <div
+              <a
+                href='/resume.pdf'
+                download='chandan_kumar_r.pdf'
                 id="resume"
                 style={{
                   display: "flex",
                   justifyContent: "start",
                   marginTop: "20px",
+                  textDecoration: "none"
                 }}
-                onClick={downloadResume}
               >
                 <Typography variant="p" fontSize="25px" color="secondary">
                   Résumé
@@ -66,7 +65,7 @@ const About = () => {
                   sx={{ marginLeft: "15px" }}
                   color="secondary"
                 />
-              </div>
+              </a>
             </Tooltip>
           </Container>
         </Grid>
