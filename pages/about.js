@@ -47,7 +47,7 @@ const About = () => {
 
             <Tooltip title="Download Resume">
               <a
-                href='/resume.pdf'
+                href='/portfolio/resume.pdf'
                 download='chandan_kumar_r.pdf'
                 id="resume"
                 style={{
