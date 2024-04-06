@@ -14,7 +14,7 @@ import { useTheme } from "@mui/material/styles";
 const SkillCard = (props) => {
   const theme = useTheme();
   return (
-    <Grid item xs={6} sm={4} md={3} lg={2} xl={1.71}>
+    <Grid item xs={6} sm={4} md={3} lg={2} xl={2}>
       <Card
         sx={{
           backgroundColor: theme.palette.tertiary.main,

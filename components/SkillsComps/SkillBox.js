@@ -13,14 +13,14 @@ const SkillBox = (props) => {
   const importAll = (r) => {
     let svgs = {};
     r.keys().forEach((key) => {
-      const svgName = key.replace('./', '').replace('.svg', '');
+      const svgName = key.replace("./", "").replace(".svg", "");
       svgs[svgName] = r(key).default;
     });
     return svgs;
   };
-  
-  const useSvg = importAll(require.context('@/public/svgs', false, /\.svg$/));
-  
+
+  const useSvg = importAll(require.context("@/public/svgs", false, /\.svg$/));
+
   const theme = useTheme();
 
   return (
@@ -37,14 +37,16 @@ const SkillBox = (props) => {
       </AccordionSummary>
       <AccordionDetails>
         <Grid container spacing={4}>
-          {props.skills && useSvg && props.skills.map((skill, index) => (
-            <SkillCard
-              key={index}
-              name={skill.name}
-              svg={useSvg[skill.svg]}
-              rating={skill.rating}
-            />
-          ))}
+          {props.skills &&
+            useSvg &&
+            props.skills.map((skill, index) => (
+              <SkillCard
+                key={index}
+                name={skill.name}
+                svg={useSvg[skill.svg]}
+                rating={skill.rating}
+              />
+            ))}
         </Grid>
       </AccordionDetails>
     </Accordion>
