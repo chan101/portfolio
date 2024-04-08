@@ -23,6 +23,7 @@
     "tech":"Python, Tensorflow, HTML and CSS.",
     "description":"A machine learning project which detects skin cancer based on the input using model developed using thousands of melanoma affected skin.",
     "source":"https://github.com/chan101/skin_cancer_detection",
+	"live":"https://scorpion-absolute-recently.ngrok-free.app/skin/",
     "imagesFolder":"skin"
   },
   {
@@ -40,7 +41,7 @@
     "tech":"JavaScript, PHP, HTML, CSS and MySql",
     "description":"Household savings and expenditure management systems allows every household to track their saving and expenses and manage them.",
     "source":"https://github.com/chan101/household_savings_and_expenditure_management_system",
-    "live":"https://scorpion-absolute-recently.ngrok-free.app/household_savings_and_expenditure_management_system/",
+    "live":"https://scorpion-absolute-recently.ngrok-free.app/hsem/",
     "imagesFolder":"hsem"
   },
   {
