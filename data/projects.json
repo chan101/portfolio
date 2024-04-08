@@ -3,7 +3,7 @@
     "title":"Portfolio",
     "date":"Oct 2023",
     "tech":"Next JS and React JS",
-    "description":"A portfolio site",
+    "description":"A portfolio site built to experience an interactive, engaging and responsive showcase of my skills, projects, work experience and more.",
     "source":"https://github.com/chan101/portfolio",
     "live":"https://chan101.github.io/portfolio/",
     "imagesFolder":"port"
@@ -12,7 +12,7 @@
     "title":"Dev Tools",
     "date":"Jan 2023",
     "tech":"React JS and Node JS ",
-    "description":"Built a tool to make my work more efficient.",
+    "description":"Tool built to ease, automate and quicken several simple and mundane tasks like app status check, log view, application control and more.",
     "source":"https://github.com/chan101/DevTools",
     "live":"https://scorpion-absolute-recently.ngrok-free.app/",
     "imagesFolder":"dev"
@@ -21,7 +21,7 @@
     "title":"Skin Cancer Detection",
     "date":"May 2021",
     "tech":"Python, Tensorflow, HTML and CSS.",
-    "description":"A machine learning project which detects skin cancer based on the input using model developed using thousands of melanoma affected skin.",
+    "description":"A machine learning project which predicts if a skin is affected by Melanoma a form of skin cancer using model developed using thousands of melanoma affected skin images.",
     "source":"https://github.com/chan101/skin_cancer_detection",
 	"live":"https://scorpion-absolute-recently.ngrok-free.app/skin/",
     "imagesFolder":"skin"
@@ -30,7 +30,7 @@
     "title":"Auction_24x7",
     "date":"January 2021",
     "tech":"JavaScript, PHP, HTML, CSS and MySql",
-    "description":"Household savings and expenditure management systems allows every household to track their saving and expenses and manage them.",
+    "description":"Household savings and expenditure management systems allows every household to track their saving, expenses, create budget and manage them.",
     "source":"https://github.com/chan101/Auction_24x7",
     "live":"https://scorpion-absolute-recently.ngrok-free.app/Auction_24x7/",
     "imagesFolder":"a247"
@@ -39,7 +39,7 @@
     "title":"Savings and Expense Management",
     "date":"August 2019",
     "tech":"JavaScript, PHP, HTML, CSS and MySql",
-    "description":"Household savings and expenditure management systems allows every household to track their saving and expenses and manage them.",
+    "description":"Auction site for people to post ads to sell items and buyers to bid on them.",
     "source":"https://github.com/chan101/household_savings_and_expenditure_management_system",
     "live":"https://scorpion-absolute-recently.ngrok-free.app/hsem/",
     "imagesFolder":"hsem"
@@ -48,7 +48,7 @@
     "title":"Gym Management",
     "date":"January 2020",
     "tech":"C++",
-    "description":"Household savings and expenditure management systems allows every household to track their saving and expenses and manage them.",
+    "description":"Basic CLI project that allows user to manage a gym and it's members.",
     "source":"https://github.com/chan101/GYM_management_system",
     "imagesFolder":"gym"
   }
