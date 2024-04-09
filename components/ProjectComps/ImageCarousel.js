@@ -45,7 +45,7 @@ const ImageCarousel = (props) => {
 
   return (
     <div>
-      <Carousel showThumbs={false} autoPlay={true} infiniteLoop interval={5000} preventMovementUntilSwipeScrollTolerance={true} swipeScrollTolerance={50}>
+      <Carousel showThumbs={false} autoPlay={true} infiniteLoop interval={10000} preventMovementUntilSwipeScrollTolerance={true} swipeScrollTolerance={50}>
         {images.map((image, index) => (
           <div onClick={()=>{setFSC(!FSC)}} key={index}>
             <Image onClick={()=>{alert("test")}} src={image} alt={index} style={{ height: "40%" }} />

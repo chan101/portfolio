@@ -6,6 +6,7 @@ import { Close } from "@mui/icons-material";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 const FullscreenCarousel = (props) => {
+  document.body.style.overflow = "hidden";
   return (
     <Backdrop
       sx={{ color: "#fff", zIndex: 1101, backdropFilter: "blur(4px)", display:"grid", placeContent:"center"}}
@@ -33,6 +34,7 @@ const FullscreenCarousel = (props) => {
           <IconButton
             onClick={() => {
               props.setFSC(!props.FSC);
+              document.body.style.overflow = "auto";
             }}
           >
             <Close fontSize="large" />
@@ -40,7 +42,9 @@ const FullscreenCarousel = (props) => {
         </div>
         <div style={{ width: "90%", height: "90%" }}>
           <Carousel
-            showThumbs={false}
+            showThumbs={true}
+            stopOnHover={true}
+            useKeyboardArrows
             infiniteLoop
             renderArrowPrev={(onClickHandler, hasPrev, label) =>
               hasPrev && (
@@ -75,11 +79,8 @@ const FullscreenCarousel = (props) => {
             style={{ width: "100%", height: "100%" }}
           >
             {props.images.map((image, index) => (
-              <div key={index}>
+              <div key={index} >
                 <Image
-                  onClick={() => {
-                    alert("test");
-                  }}
                   src={image}
                   alt={index}
                   style={{ width: "90%", height: "90%" }}
