@@ -13,6 +13,17 @@ export default function App({ Component, pageProps }) {
   const [title,setTitle] = useState("");
   const pathname = router.pathname;
 
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch('https://scorpion-absolute-recently.ngrok-free.app/test/');
+        
+      } catch (error) {
+      }
+    };
+
+    fetchData();
+  }, []);
   useEffect(()=>{
     if(pathname=='/'){
       setTitle("Home")
