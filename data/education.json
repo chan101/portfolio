@@ -4,6 +4,7 @@
         "Institution":"Sapthagiri College of Engineering",
         "location":"Bengaluru",
         "Course":"Bachelor of Engineering - Information Science Engineering",
+        "grade":"SGPA 7.98",
         "url":"https://www.sapthagiri.edu.in/"
     },
     {
@@ -11,6 +12,7 @@
         "Institution":"M.E.S Kishore Kendra",
         "location":"Bengaluru",
         "Course":"Class XII - PCMB",
+        "grade":"66.83%",
         "url":"https://mesinstitutions.in/web/mes-kk-pu-college"
     },
     {
@@ -18,6 +20,7 @@
         "Institution":"Widia Poorna Prajna School",
         "location":"Bengaluru",
         "Course":"Class X - S.S.L.C",
+        "grade":"92.16%",
         "url":"https://www.wpps.in/"
     }
 ]

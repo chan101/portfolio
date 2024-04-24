@@ -48,6 +48,7 @@ const MyVerticalTimeline = (props) => {
               </Typography>
             </div>
             <p>{data.Course}</p>
+            <p><i>{data.grade}</i></p>
           </VerticalTimelineElement>
         ))}
       {props.workData &&
