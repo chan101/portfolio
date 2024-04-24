@@ -30,7 +30,7 @@
     "title":"Auction_24x7",
     "date":"January 2021",
     "tech":"JavaScript, PHP, HTML, CSS and MySql",
-    "description":"Household savings and expenditure management systems allows every household to track their saving, expenses, create budget and manage them.",
+    "description":"Auction site for people to post ads to sell items and buyers to bid on them.",
     "source":"https://github.com/chan101/Auction_24x7",
     "live":"https://scorpion-absolute-recently.ngrok-free.app/Auction_24x7/",
     "imagesFolder":"a247"
@@ -39,7 +39,7 @@
     "title":"Savings and Expense Management",
     "date":"August 2019",
     "tech":"JavaScript, PHP, HTML, CSS and MySql",
-    "description":"Auction site for people to post ads to sell items and buyers to bid on them.",
+    "description":"Household savings and expenditure management systems allows every household to track their saving, expenses, create budget and manage them.",
     "source":"https://github.com/chan101/household_savings_and_expenditure_management_system",
     "live":"https://scorpion-absolute-recently.ngrok-free.app/hsem/",
     "imagesFolder":"hsem"
