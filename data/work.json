@@ -10,6 +10,8 @@
         "title": "Responsibilities",
         "list": [
           "\u25B8 Create new pages, integrate APIs and add functionalities using Struts framework, Java and Javascript.",
+		  "\u25B8 Created REST API endpoints using Spring Boot to implement required client functionality.",
+		  "\u25B8 Write high quality maintainable code.",
           "\u25B8 Train and provide K.T. to junior devs and ensure their project readiness."
         ]
       },
