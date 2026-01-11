@@ -1,9 +1,41 @@
 [
+    {
+    "date": "Nov 2024 - Present",
+    "Organisation": "OP Financial Group | Tata Consultancy Services",
+    "location": "Helsinki, FI",
+    "Role": "Senior Full Stack Developer",
+    "url": "https://www.op.fi//",
+    "workDetails": [
+      {
+        "title": "Responsibilities",
+        "list": [
+          "\u25B8 Analyze and resolve critical performance bottlenecks, improving application scalability, responsiveness, and overall system reliability.",
+		      "\u25B8 Designe and develop RESTful APIs using Spring Boot, enabling seamless integration and supporting complex client-side functionality.",
+		      "\u25B8 Streamline and guide agile development processes for offshore teams, improving sprint efficiency, delivery predictability, and cross-team collaboration.",
+          "\u25B8 Establish CI/CD pipelines to improve application integration and deployment reliability."
+        ]
+      },
+      {
+        "title": "Projects",
+        "list": [
+          "\u25B8 TCS BaNCS: A banking product implemented for OP Financial Group (client)."
+        ]
+
+      },
+      {
+        "title": "Achievements",
+        "list": [
+          "\u25B8 Played a key role in orchestrating the migration of applications from on-premises infrastructure to Microsoft Azure.",
+          "\u25B8 Designed and implemented a highly available (HA) JMS and Kafka cluster to ensure fault tolerance and high throughput."
+        ]
+      }
+    ]
+  },
   {
-    "date": "August 2021 - Present",
+    "date": "Aug 2021 - Nov 2024",
     "Organisation": "Tata Consultancy Services",
-    "location": "Bengaluru",
-    "Role": "Systems Engineer",
+    "location": "Bengaluru, IN",
+    "Role": "Full Stack Developer",
     "url": "https://www.tcs.com/",
     "workDetails": [
       {

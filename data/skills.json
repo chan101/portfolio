@@ -93,9 +93,19 @@
                 "rating":"3.5"
             },
             {
-                "name":"AWS EC2",
-                "svg":"aws_ec2",
+                "name":"Kafka",
+                "svg":"kafka",
                 "rating":"4"
+            },
+            {
+                "name":"Jenkins",
+                "svg":"jenkins",
+                "rating":"4"
+            },
+            {
+                "name":"ActiveMQ",
+                "svg":"activemq",
+                "rating":"3"
             }
         ]
     },

@@ -34,8 +34,14 @@ const contact = () => {
     const telUrl = `tel:${phoneNumber}`;
     window.open(telUrl, "_blank");
   };
+    const handleCallFI = () => {
+    const phoneNumber = "+358466181494";
+    const telUrl = `tel:${phoneNumber}`;
+    window.open(telUrl, "_blank");
+  };
+  
   const handleLocation = () => {
-    window.open("https://maps.app.goo.gl/wWfHTYQgM7Nio9u29", "_blank");
+    window.open("https://maps.app.goo.gl/jwbaAYLBoJ9Z5PXJ9", "_blank");
   };
   const handleLinkedIn = () => {
     window.open(
@@ -92,6 +98,18 @@ const contact = () => {
                 <Typography variant="body2">+91 9686407238</Typography>
               </ListItem>
               <ListItem>
+                <Tooltip title="Call">
+                  <IconButton
+                    color="secondary"
+                    edge="start"
+                    onClick={handleCallFI}
+                  >
+                    <Phone />
+                  </IconButton>
+                </Tooltip>
+                <Typography variant="body2">+358 466181494</Typography>
+              </ListItem>
+              <ListItem>
                 <Tooltip title="Location">
                   <IconButton
                     color="secondary"
@@ -101,7 +119,7 @@ const contact = () => {
                     <LocationOn />
                   </IconButton>
                 </Tooltip>
-                <Typography variant="body2">Bengaluru - 560057</Typography>
+                <Typography variant="body2">Helsinki, FI</Typography>
               </ListItem>
               <ListItem>
                 <Tooltip title="LinkedIn">
